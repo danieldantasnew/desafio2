@@ -19,6 +19,9 @@ servidor.get("/portfolio", function(req, res){
     return res.render("portfolio")
 })
 
+servidor.use(function(req, res) {
+    res.status(404).render("not-found");
+})
 
 servidor.listen(5000, function(){
     console.log("Servidor está rodando")

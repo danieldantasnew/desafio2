@@ -173,3 +173,13 @@ iframe{
     position: absolute;
     top: 5%;
 }
+
+/*=== MENSAGEM DE ERRO === */
+
+.mensagemErro p{
+    text-align: center;
+    font-size: 60px;
+    margin: 30vh 10vw;
+    padding: 100px;
+    background-color: rgb(59, 26, 206);
+}
