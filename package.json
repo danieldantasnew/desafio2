@@ -1,0 +1,16 @@
+{
+  "name": "desafio2",
+  "version": "1.0.0",
+  "description": "*** CRIAÇÃO DO SERVIDOR ***",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "nodemon servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

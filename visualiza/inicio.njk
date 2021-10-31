@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Inicio Desafio</title>
+    <link rel="stylesheet" href="styles2.css">
+    <!--Aqui o head foi definido logo o padrão não aparecerá-->
+{% endblock %}
+
+{% block conteudo %}
+
+<div class ="PagSobre" id = "PagInicial">
+        <img src="/visualiza/logo.png" alt="Logo_rocketseat">
+        <h1>Rocketseat</h1>
+        <p>Uma empresa focada em ensinar programação.</p>
+        <h2>Tecnologias Utilizadas:</h2>
+        <ul>
+            <li>Cloud Computing;</li>
+            <li>Eye-Tracking e Voices Commands;</li>
+            <li>Realidade Aumentada;</li>
+            <li>Redes Sociais;</li>
+        </ul>
+</div>
+
+<div id = "Mudar" class = "links">
+        <a href = "https://github.com/Rocketseat" target="_blank">Github</a>
+        <a href = "https://instagram.com" target = "_blank">Instagram</a>
+        <a href = "https://facebook.com" target = "_blank">Facebook</a>
+
+</div>
+
+{% endblock %}

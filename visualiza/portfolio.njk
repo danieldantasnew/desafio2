@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="styles2.css">
+
+<title>Portfolio-Desafio</title>
+
+<!--Aqui o head foi definido logo o padrão não aparecerá-->
+
+{% endblock%}
+
+{% block conteudo%}
+
+<div id="ParteDoBlog">
+    <h1>Posts Favoritos da Rocketseat</h1>
+</div>
+
+
+<section class="cards">
+    <div id="dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida" class="card">
+        <div class="card_conteudo_imagens">
+            <img src="https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg"
+                alt="Blog Rocketseat">
+        </div>
+
+        <div class="card_titulo_do_card">
+            <p>Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida</p>
+
+        </div>
+
+        <div class="card_autor">
+            <p>Por Thiago Marinho</p>
+            <p class="card_tempoLeitura">3 MIN DE LEITURA</p>
+        </div>
+    </div>
+
+    <div id="construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox" class="card">
+        <div class="card_conteudo_imagens">
+            <img src="https://blog.rocketseat.com.br/content/images/2020/10/teste.jpg" alt="Blog Rocketseat">
+
+        </div>
+
+        <div class="card_titulo_do_card">
+            <p>Construindo App com Mapa usando React Native Maps e MapBox</p>
+
+        </div>
+
+        <div class="card_autor">
+            <p>Por Thiago Marinho</p>
+            <p class="card_tempoLeitura">8 MIN DE LEITURA</p>
+        </div>
+    </div>
+
+    <div id="nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance" class="card">
+        <div class="card_conteudo_imagens">
+            <img src="https://blog.rocketseat.com.br/content/images/2020/11/capa_visao-geral-sobre-next-js-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance.jpg"
+                alt="Blog Rocketseat">
+
+        </div>
+
+        <div class="card_titulo_do_card">
+            <p>Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance</p>
+
+        </div>
+
+        <div class="card_autor">
+            <p>Por Thiago Marinho</p>
+            <p class="card_tempoLeitura">4 MIN DE LEITURA</p>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="modal_sobreposicao">
+    <div class="modal">
+        <a class="close2_modal">
+            <i class="material-icons">close</i>
+        </a>
+
+        <div class="conteudo_modal">
+            <iframe scr="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<script src="script2.js"></script>
+        
+{% endblock %}

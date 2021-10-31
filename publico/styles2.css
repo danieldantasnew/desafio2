@@ -1,0 +1,175 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root{
+    --corWhite: white;
+    --corBlack: black;
+}
+
+body{
+    background: var(--corBlack);
+    color: var(--corWhite);
+    font-family: 'Roboto', sans-serif;
+    background-size: 100%;
+}
+
+header{
+    padding: 20px;
+    border-top: 1px solid rgb(59, 26, 206);
+    border-bottom: 1px solid rgb(59, 26, 206);
+    background: rgb(62, 6, 165);
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    color: var(--corWhite);
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.links a:hover{
+    transition: 150ms;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.PagSobre{
+    padding-top: 60px;
+    text-align: center;
+    
+}
+
+.PagSobre img{
+    border-radius: 50%;
+    border: 5px solid var(--corWhite);
+    height: 250px;
+}
+
+.PagSobre h1{
+    padding: 30px;
+    font-size: 4em;
+}
+.PagSobre h2{
+    font-size: 3em;
+    padding-top: 5em;
+}
+
+.PagSobre p{
+    font-size: 30px;
+}
+
+.PagSobre ul{
+    padding-top: 10em;
+    padding-bottom: 1em;
+}
+
+.PagSobre li{
+    font-size: 30px;
+}
+
+#Mudar a {
+    border-bottom:  solid 1px rgb(59, 26, 206);
+    padding-bottom: 4px;
+}
+
+#Mudar a:hover{
+    color: rgb(59, 26, 206);
+    transition: 200ms;
+}
+
+#ParteDoBlog h1{
+   text-align: center;
+   font-size: 4em;
+   padding: 50px;
+}
+
+/*=== CARDS ===*/
+
+.cards{
+    max-width: 93%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.card{
+    background-color: white;
+    color: rgb(59, 26, 206);
+    border-radius: 20px;
+}
+
+.card_conteudo_imagens img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card_titulo_do_card, .card_autor{
+    padding: 22px;
+    font-weight: bold;
+}
+
+.card_autor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_tempoLeitura{
+    background-color: white;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border: 1px solid rgb(59, 26, 206);
+    border-radius: 20px;
+}
+
+/* === MODAL === */
+
+.modal_sobreposicao{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close2_modal{
+    color: var(--corBlack);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL ACTIVE === */
+
+.modal_sobreposicao.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
