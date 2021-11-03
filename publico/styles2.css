@@ -122,6 +122,7 @@ header{
 .card_autor{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_tempoLeitura{

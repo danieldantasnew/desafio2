@@ -1,7 +1,10 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 
+const paginas = require('./dados')
+
 const servidor = express()
+
 
 servidor.use(express.static("publico"))
 servidor.set("view engine", "njk")
@@ -11,12 +14,28 @@ nunjucks.configure("visualiza", {
 })
 
 servidor.get("/", function(req, res){
-    return res.render("inicio")
+    const inicio = {      
+            id: "PagInicial",
+            title: "Rocketseat",
+            description: "Uma empresa focada em ensinar programação.",
+            title2: "Tecnologias Utilizadas:",
+            topic1: "Cloud Computing;",
+            topic2: "Eye-Tracking e Voices Commands;",
+            topic3: "Realidade Aumentada;",
+            topic4: "Redes Sociais;",
+        
+        links: [
+            {name: "Github", url: "https://github.com/Rocketseat"},
+            {name: "Instagram", url: "https://instagram.com"},
+            {name: "Facebook", url: "https://facebook.com"}
+        ]
+    }
+    return res.render("inicio", {inicio: inicio})
 })
 
 
 servidor.get("/portfolio", function(req, res){
-    return res.render("portfolio")
+    return res.render("portfolio", {items: paginas})
 })
 
 servidor.use(function(req, res) {
