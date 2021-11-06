@@ -4,13 +4,15 @@ const cards = document.querySelectorAll('.card')
 for(let card of cards){
     card.addEventListener("click", function(){
         const paginaID = card.getAttribute("id")
-        modalSobreposicao.classList.add('active')
-        modalSobreposicao.querySelector('iframe').src = `https://blog.rocketseat.com.br/${paginaID}/`
+        
+        window.location.href = `/paginas/${paginaID}/`
+        /*modalSobreposicao.classList.add('active')
+        modalSobreposicao.querySelector('iframe').src = `https://blog.rocketseat.com.br/${paginaID}/`*/
 
     })
 }
 
-document.querySelector(".close2_modal").addEventListener("click", function(){
+/*document.querySelector(".close2_modal").addEventListener("click", function(){
     modalSobreposicao.classList.remove('active')
     modalSobreposicao.querySelector("iframe").src = ""
-})
+})*/

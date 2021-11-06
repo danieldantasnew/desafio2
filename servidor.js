@@ -10,7 +10,9 @@ servidor.use(express.static("publico"))
 servidor.set("view engine", "njk")
 
 nunjucks.configure("visualiza", {
-    express: servidor
+    express: servidor,
+    autoescape: false,
+    noCache: true
 })
 
 servidor.get("/", function(req, res){
@@ -36,6 +38,20 @@ servidor.get("/", function(req, res){
 
 servidor.get("/portfolio", function(req, res){
     return res.render("portfolio", {items: paginas})
+})
+
+servidor.get("/paginas/:id", function(req, res) {
+    const id = req.params.id;
+    
+    const pagina = paginas.find(function(pagina){
+        return pagina.id == id
+    })
+
+    if(!pagina){
+        return res.render("not-found");
+    }
+
+    return res.render("paginas", {item: pagina})
 })
 
 servidor.use(function(req, res) {

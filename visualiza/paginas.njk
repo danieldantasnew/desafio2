@@ -1,11 +1,10 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="/styles2.css">
 
-<title>Portfolio-Desafio</title>
+<title>{{item.title}}</title>
 
 <!--Aqui o head foi definido logo o padrão não aparecerá-->
 
@@ -14,7 +13,7 @@
 {% block conteudo%}
 
 <div id="ParteDoBlog">
-    <h1>Posts Favoritos da Rocketseat</h1>
+    <h1>{{item.title}}</h1>
 </div>
 
 
@@ -22,7 +21,7 @@
     {% for item in items %}
     <div id="{{item.id}}" class="card">
         <div class="card_conteudo_imagens">
-            <img src="{{item.imagem_url}}"
+            <img src="{{imagem_url}}"
                 alt="Blog Rocketseat">
         </div>
 
@@ -36,24 +35,8 @@
             <p class="card_tempoLeitura">{{item.minutes}}</p>
         </div>
     </div>
-    
     {% endfor %}
 </section>
-
-<!--
-<div class="modal_sobreposicao">
-    <div class="modal">
-        <a class="close2_modal">
-            <i class="material-icons">close</i>
-        </a>
-
-        <div class="conteudo_modal">
-            <iframe scr="" frameborder="0"></iframe>
-        </div>
-    </div>
-
-</div>
--->
-<script src="/script2.js"></script>
         
 {% endblock %}
+
