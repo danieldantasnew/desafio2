@@ -16,13 +16,10 @@
     <h1>{{item.title}}</h1>
 </div>
 
-
-<section class="cards">
-    {% for item in items %}
-    <div id="{{item.id}}" class="card">
-        <div class="card_conteudo_imagens">
-            <img src="{{imagem_url}}"
-                alt="Blog Rocketseat">
+<section class="cartao">
+    <div id="{{item.id}}" class="card pagina">
+        <div class="card_conteudo_imagens iframe">
+            <iframe scr="https://blog.rocketseat.com.br/{{item.id}}/" frameborder="0"></iframe>
         </div>
 
         <div class="card_titulo_do_card">
@@ -35,8 +32,6 @@
             <p class="card_tempoLeitura">{{item.minutes}}</p>
         </div>
     </div>
-    {% endfor %}
-</section>
-        
+</section>   
 {% endblock %}
 

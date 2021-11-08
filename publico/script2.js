@@ -1,4 +1,4 @@
-const modalSobreposicao = document.querySelector('.modal_sobreposicao')
+//const modalSobreposicao = document.querySelector('.modal_sobreposicao')
 const cards = document.querySelectorAll('.card')
 
 for(let card of cards){

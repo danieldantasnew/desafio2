@@ -107,6 +107,7 @@ header{
     background-color: white;
     color: rgb(59, 26, 206);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card_conteudo_imagens img{
@@ -183,4 +184,26 @@ iframe{
     margin: 30vh 10vw;
     padding: 100px;
     background-color: rgb(59, 26, 206);
+}
+
+/* === CARTAO DA PAGINA.NJK === */
+
+.cartao{
+    width: 90%;
+    margin: 0 auto;
+   
+}
+
+
+.card.pagina{
+    background-color: white;
+    color: rgb(59, 26, 206);
+    border-radius: 0px;
+}
+
+.card_conteudo_imagens.iframe{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
 }
