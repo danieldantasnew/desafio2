@@ -172,7 +172,7 @@ header{
 iframe{
     width: 100%;
     height: 90%;
-    top: 5%;
+    top: 0;
     position: absolute;
 }
 
@@ -192,22 +192,23 @@ iframe{
     margin: 0 auto;
     max-width: 80%;
     height: 90%;
+    position: relative;
+
 }
 
 
 .card.pagina{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(59, 26, 206);
     border-radius: 0px;
 }
 
-.card_conteudo_video{
-    position: relative;
-}
 .card_conteudo_video.iframe{
-    margin-top: 100px;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 300px;
+}
+
+.embaixoCartao{
+    margin-top: 200vh;
 }
