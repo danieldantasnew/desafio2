@@ -41,21 +41,21 @@ servidor.get("/portfolio", function(req, res){
 })
 
 servidor.get("/paginas/:id", function(req, res) {
-    const id = req.params.id;
+    const id = req.params.id
     
     const pagina = paginas.find(function(pagina){
         return pagina.id == id
     })
 
     if(!pagina){
-        return res.render("not-found");
+        return res.render("not-found")
     }
 
     return res.render("paginas", {item: pagina})
 })
 
 servidor.use(function(req, res) {
-    res.status(404).render("not-found");
+    res.status(404).render("not-found")
 })
 
 servidor.listen(5000, function(){
