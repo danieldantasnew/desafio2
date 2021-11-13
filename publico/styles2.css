@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    padding: 20px;
+    padding: 30px;
     border-top: 1px solid rgb(59, 26, 206);
     border-bottom: 1px solid rgb(59, 26, 206);
     background: rgb(62, 6, 165);
@@ -31,16 +31,34 @@ header{
 }
 
 .links a{
-    color: var(--corWhite);
-    padding: 30px;
+    color: rgba(255, 255, 255, 0.726);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 40px;
+    position: relative;
 }
 
+.links a + a{
+    margin-left: 30px;
+}
 .links a:hover{
     transition: 150ms;
-    color: rgba(0, 0, 0, 0.705);
+    color: var(--corWhite);
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    right: 0;
+    background-color: var(--corWhite);
+    bottom: -2px;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 200ms ease-in-out 0.1s;
 }
 
 .PagSobre{
